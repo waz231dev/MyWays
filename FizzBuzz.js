@@ -5,18 +5,19 @@ function fizzBuzz(phoneNumber){
         sum = sum + remainder;
         phoneNumber = Math.floor(phoneNumber/10);
     }
-
+    let ans = ""
     for(let i = 1 ; i <= sum ; i++){
         if(i % 4 == 0 && i % 5 == 0){
-            console.log("FizzBuzz ");
+            ans+="FizzBuzz ";
         }else if(i % 4 == 0){
-            console.log("Fizz ");
+            ans+= "Fizz ";
         }else if(i % 5 == 0){
-            console.log("Buzz ");
+            ans +="Buzz ";
         }else{
-            console.log(i+" ");
+            ans += i+" ";
         }
     }
+    console.log(ans);
 }
 
 fizzBuzz(7060680396);
